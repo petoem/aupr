@@ -1,0 +1,30 @@
+{
+  "name": "aupr",
+  "version": "0.0.2",
+  "private": false,
+  "author": "Michael Petö <npm@petoe.me>",
+  "description": "AUPR -> auth-user-password-rights",
+  "keywords": [
+    "auth",
+    "password",
+    "login",
+    "user",
+    "permissions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petoem/aupr.git"
+  },
+  "main": "aupr.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "dependencies": {
+    "basic-auth": "^1.0.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/petoem/aupr",
+  "devDependencies": {
+    "express": "^4.10.2"
+  }
+}
