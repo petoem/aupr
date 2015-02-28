@@ -1,6 +1,6 @@
 {
   "name": "aupr",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "private": false,
   "author": "Michael Petö <npm@petoe.me>",
   "description": "AUPR -> auth-user-password-rights",
