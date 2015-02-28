@@ -43,7 +43,7 @@ var aupr = function aupr(){
     		res.set('WWW-Authenticate', 'Basic realm=Authorization Required!');
     		res.status(401);
     		//console.log("# auth: No data");
-    		next();
+    		return res.send("<html><head><title>Authorization Required</title></head><body><h1>Authorization Required</h1></body></html>").end();
     	}else{
 	    	_self._authdata.forEach(function (oneuser){
 	    		if(oneuser.name == user.name && user.pass == oneuser.pass)
@@ -58,7 +58,7 @@ var aupr = function aupr(){
 			    //console.log("# auth: fail" + JSON.stringify(user));
 		    	res.set('WWW-Authenticate', 'Basic realm=Authorization Required!');
 		    	res.status(401);
-		    	next();
+		    	return res.send("<html><head><title>Authorization failed</title></head><body><h1>Authorization failed</h1><p>wrong login or password</p></body></html>").end();
 	    	}
 		}
     };
